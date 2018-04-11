@@ -7,9 +7,6 @@
  */
 
 require 'config/config.php';
-
-$config = new Admin();
-
 include 'php/header.php';
 
 $pages_dir = 'php/dashboard/';
@@ -21,7 +18,7 @@ if(!empty($_GET['p'])){
     if(in_array($p.'.php', $pages)){
         include($pages_dir.'/'.$p.'.php');
     } else {
-        include('404.php');
+        include('../404.php');
     }
 } else {
     include($pages_dir.'/index.php');

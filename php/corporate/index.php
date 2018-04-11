@@ -33,7 +33,7 @@ $stmt->execute();
                     <td><?=$row['cp']?></td>
                     <td><?=date('d M Y H:m', strtotime($row['created_at']))?></td>
                     <td >
-                        <a href="<?=CORPORATE?>?p=profile&id=<?=$row['id']?>">
+                        <a href="<?=CORPORATE?>?p=profile&id=<?=$row['id']?>" <?=$access['read']?>>
                             <button class="btn btn-sm btn-primary" style="text-transform: uppercase; font-size: 10px; font-weight: 500;">details</button>
                         </a>
                     </td>

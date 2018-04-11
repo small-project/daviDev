@@ -11,9 +11,20 @@
 <script src="<?=URL?>assets/vendors/dll/offcanvas.js"></script>
 
 <script src="<?=URL?>assets/js/custom.js"></script>
+<?php if($menu == 'corporate'){ ?>
 <script src="<?=URL?>assets/js/modul/corporate.js"></script>
+<?php } if($menu == 'order'){ ?>
 <script src="<?=URL?>assets/js/modul/order.js"></script>
-
+<?php } if($menu == 'payment'){ ?>
+<script src="<?=URL?>assets/js/modul/kas.js"></script>
+<?php } if($menu == 'management'){ ?>
+    <script src="<?=URL?>assets/js/modul/management.js"></script>
+<?php } ?>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>-->
 <!--<script>-->
 <!--    var ctx = document.getElementById("myChart");-->

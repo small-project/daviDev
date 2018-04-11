@@ -5,7 +5,7 @@ $provinsi = $config->Products('id, name', 'provinces');
 
 
 ?>
-<div class="row justify-content-center">
+<div class="row justify-content-center" <?=$access['create']?>>
     <div class="col-12 col-sm-8 col-lg-6">
 
         <div id="messageCorporate" class="alert alert-dismissible fade show" role="alert">
@@ -108,7 +108,7 @@ $provinsi = $config->Products('id, name', 'provinces');
                         <input type="text" name="posCorporate" data-parsley-minLength="4"
                                data-parsley-type="number" id="posCorporate" class="form-control" required>
                     </div>
-                    <button type="submit" class="btn btn-block btn-outline-light">submit</button>
+                    <button type="submit" class="btn btn-block btn-outline-light" >submit</button>
 
                 </form>
             </div>

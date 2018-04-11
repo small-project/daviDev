@@ -6,9 +6,23 @@
  * Time: 13.10
  */
 define('URL', 'http://localhost/bungdav/');
-define('CORPORATE', 'http://localhost/bungdav/corporate/');
-require 'api.php';
+define('CORPORATE', URL.'corporate/');
+define('ORDER', URL.'order/');
+define('MANAGEMENT', URL.'management/');
+define('PAYMENT', URL.'payment/');
 
+
+require 'api.php';
+require 'session.php';
+
+$config = new Admin();
+
+if(isset($_SESSION['user_session']))
+{
+    $session_id = $_SESSION['user_session'];
+}else{
+    $session_id = "";
+}
 //read url
 $url = "$_SERVER[REQUEST_URI]";
 $url = explode('/', $url);
@@ -26,6 +40,16 @@ if (isset($url[3])){
     $footer = "";
 }
 //
-$config = new Admin();
-
+$admin = $config->ProductsJoin('id, name, email, jabatan, role_id', 'users', '', 'WHERE id = '. $session_id);
+$admin = $admin->fetch(PDO::FETCH_LAZY);
 $device = $config->systemInfo();
+//info weight pages
+$previllages = $config->ProductsJoin('sub_menus.link, previllages.weight', 'sub_menus', 'INNER JOIN previllages ON previllages.id_submenu = sub_menus.id',
+    "WHERE previllages.id_admin = ". $admin['id'] ." AND sub_menus.link LIKE '%". $footer ."%' GROUP BY sub_menus.link");
+$previllages = $previllages->fetch(PDO::FETCH_LAZY);
+$access = $config->weightPages($previllages['weight']);
+
+//end of info
+$listMenu = $config->ProductsJoin('menus.id, menus.menu, menus.links, staffs.id_roles', 'menus', 'INNER JOIN staffs ON staffs.id_menu = menus.id', 'WHERE staffs.id_roles = '. $admin['role_id']);
+$subMenus = $config->ProductsJoin('sub_menus.submenu, sub_menus.link, menus.menu, menus.links, previllages.id_admin, previllages.weight', 'sub_menus', 'INNER JOIN menus ON menus.id = sub_menus.id_menu
+INNER JOIN previllages ON previllages.id_submenu = sub_menus.id', "WHERE previllages.id_admin = ".$admin['role_id'] ." AND menus.links LIKE '%". $menu ."%'" );

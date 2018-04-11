@@ -18,7 +18,7 @@ class Login
     {
         try
         {
-            $stmt = $this->conn->prepare("SELECT * FROM tb_admin WHERE username=:uname");
+            $stmt = $this->conn->prepare("SELECT * FROM users WHERE email=:uname");
             $stmt->execute(array(':uname'=>$username));
             $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
             if($stmt->rowCount() == 1)
@@ -26,7 +26,7 @@ class Login
                 if(password_verify($password, $userRow['password']))
                 {
                     if($userRow['status'] == '1'){
-                        $_SESSION['user_session'] = $userRow['username'];
+                        $_SESSION['user_session'] = $userRow['id'];
 
                         return true;
                     }else{
@@ -41,6 +41,8 @@ class Login
                     $_SESSION['error'] = "Trying to find somewhere";
                     return false;
                 }
+            }else{
+                $_SESSION['error'] = "Still finding in Goooooogle!";
             }
         }
         catch(PDOException $e)
@@ -96,11 +98,160 @@ class Admin
         $stmt = $this->conn->prepare($sql);
         return $stmt;
     }
+
+    public  function CountTables($field, $table)
+    {
+        $stmt = $this->conn->prepare('SELECT COUNT('. $field .') FROM '. $table);
+        $stmt->execute();
+        $stmt = $stmt->fetch();
+        $stmt = $stmt[0];
+        return $stmt;
+    }
+
     public function Products($field, $table)
     {
         $stmt = $this->conn->prepare('SELECT '. $field .' FROM '. $table);
         $stmt->execute();
         return $stmt;
+    }
+    public function FindProducts($field, $table, $clause)
+    {
+        $stmt = $this->conn->prepare('SELECT '. $field .' FROM '. $table .' WHERE '. $clause);
+        $stmt->execute();
+        return $stmt;
+    }
+    public function ProductsJoin($field, $table, $join, $clause)
+    {
+        $stmt = $this->conn->prepare('SELECT '. $field .' FROM '. $table.' '.$join.' '.$clause);
+        $stmt->execute();
+        return $stmt;
+    }
+    public function weightPages($val)
+    {
+        switch ($val){
+            case '2':
+                $weight = 'c';
+                $create = 'style=""""';
+                $read = 'style="display:none;"'; 
+                $update = 'style="display: none;"';
+                $delete = 'style="display: none;"';
+                break;
+            case '3':
+                $weight = 'r';
+                $create = 'style="display: none;"';
+                $read = 'style=""""'; 
+                $update = 'style="display: none;"';
+                $delete = 'style="display: none;"';
+                break;
+            case '4':
+                $weight = 'u';
+                $create = 'style="display: none;"';
+                $read = 'style="display:none;"';
+                $update = 'style=""""';
+                $delete = 'style="display: none;"';
+                break;
+            case '5':
+                $weight = 'cr';
+                $create = 'style=""""';
+                $read = 'style=""""';
+                $update = 'style="display: none;"';
+                $delete = 'style="display: none;"';
+                break;
+            case '6':
+                $weight = 'cu';
+                $create = 'style=""""';
+                $read = 'style="display:none;"';
+                $update = 'style=""""';
+                $delete = 'style="display: none;"';
+                break;
+            case '7':
+                $weight = 'ru';
+                $create = 'style="display: none;"';
+                $read = 'style="display:block;"';
+                $update = 'style=""""';
+                $delete = 'style="display: none;"';
+                break;
+            case '8':
+                $weight = 'd';
+                $create = 'style="display: none;"';
+                $read = 'style="display:none;"';
+                $update = 'style="display: none;"';
+                $delete = 'style=""""';
+                break;
+            case '9':
+                $weight = 'cru';
+                $create = 'style=""""';
+                $read = 'style=""""';
+                $update = 'style=""""';
+                $delete = 'style=""""';
+                break;
+            case '10':
+                $weight = 'cd';
+                $create = 'style=""""';
+                $read = 'style="display:none;"';
+                $update = 'style="display: none;"';
+                $delete = 'style=""""';
+                break;
+            case '11':
+                $weight = 'rd';
+                $create = 'style="display: none;"';
+                $read = 'style=""""';
+                $update = 'style="display: none;"';
+                $delete = 'style=""""';
+                break;
+            case '12':
+                $weight = 'ud';
+                $create = 'style="display: none;"';
+                $read = 'style="display:none;"';
+                $update = 'style=""""';
+                $delete = 'style=""""';
+                break;
+            case '13':
+                $weight = 'crd';
+                $create = 'style=""""';
+                $read = 'style="display:block;"';
+                $update = 'style="display: none;"';
+                $delete = 'style=""""';
+                break;
+            case '14':
+                $weight = 'cud';
+                $create = 'style=""""';
+                $read = 'style="display:none;"';
+                $update = 'style=""""';
+                $delete = 'style=""""';
+                break;
+            case '15':
+                $weight = 'rud';
+                $create = 'style="display: none;"';
+                $read = 'style=""""';
+                $update = 'style=""""';
+                $delete = 'style=""""';
+                break;
+            case '17':
+                $weight = 'crud';
+                $create = 'style=""""';
+                $read   = 'style=""""';
+                $update = 'style=""""';
+                $delete = 'style=""""';
+                break;
+
+            default:
+                $weight = '';
+                $create = '';
+                $read = '';
+                $update = '';
+                $delete = '';
+                break;
+        }
+
+        $previllages = array(
+                'weight'    => $weight,
+                'create'    => $create,
+                'read'     => $read,
+                'update'    => $update,
+                'delete'    => $delete
+        );
+        return $previllages;
     }
     public function paging($query,$records_per_page)
 
@@ -267,26 +418,6 @@ class Admin
             ?></ul><?php
         }
     }
-
-    //for generate autonumber
-    //$id for field name
-    //$kode for initianl
-    //tbName for name of table you got select
-//    public function Generate($id, $kode, $tbName)
-//    {
-//
-//        $sql = "SELECT MAX(RIGHT(". $id . ", 4)) AS max_id FROM " . $tbName . " ORDER BY ". $id . "";
-//        $stmt = $this->conn->prepare($sql);
-//        $stmt->execute();
-//
-//        $row = $stmt->fetch(PDO::FETCH_LAZY);
-//        $id = $row['max_id'];
-//        $sort_num = (int) substr($id, 1, 6);
-//        $sort_num++;
-//        $new_code = sprintf("$kode%04s", $sort_num);
-//
-//        return $new_code;
-//    }
     public function CodeOrder()
     {
         $length_abjad = "2";
@@ -329,7 +460,21 @@ class Admin
 
         return $tanggal;
     }
+    public function formatPrice($val)
+    {
+        $price = number_format($val, 2, ',', '.');
+        $price = 'Rp.' . $price;
 
+        return $price;
+    }
+    public function delRecord($table, $field, $id)
+    {
+        $sql = "DELETE FROM ". $table ." WHERE ". $field ." = ". $id;
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+
+        return $stmt;
+    }
     public static function systemInfo()
     {
         $user_agent = $_SERVER['HTTP_USER_AGENT'];

@@ -9,7 +9,7 @@
 require 'config/config.php';
 include 'php/header.php';
 
-$pages_dir = 'php/corporate/';
+$pages_dir = 'php/sales';
 if(!empty($_GET['p'])){
     $pages = scandir($pages_dir, 0);
     unset($pages[0], $pages[1]);

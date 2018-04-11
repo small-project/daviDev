@@ -7,9 +7,6 @@
  */
 
 require 'config/config.php';
-
-$config = new Admin();
-
 include 'php/header.php';
 
 $pages_dir = 'php/payment/';

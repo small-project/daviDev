@@ -71,7 +71,7 @@ $info = $stmt->fetch(PDO::FETCH_LAZY);
                         <label for="usernameAdmin">Bergabung Sejak</label>
                         <input style="text-transform: capitalize;" type="text" class="form-control" value="<?=date('d M Y H:m:s', strtotime($info->created_at))?>" readonly>
                     </div>
-                    <button type="submit" class="btn btn-block btn-outline-dark">Edit Profile</button>
+                    <button type="submit" class="btn btn-block btn-outline-dark" <?=$access['update']?>>Edit Profile</button>
 
                 </form>
             </div>

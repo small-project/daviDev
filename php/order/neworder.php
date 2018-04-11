@@ -1,7 +1,7 @@
 <?php if(isset($_GET['trx'])){ echo $_GET['trx']; ?>
 
 <?php }else{ ?>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" <?=$access['create']?>>
         <div class="col-12 col-sm-8 col-lg-4">
             <div class="card border-primary mb-3">
                 <div class="card-body text-primary">
