@@ -1,57 +1,75 @@
 <?php
-$outKas = $config->ProductsJoin('kas_outs.id, kas_outs.nama, kas_outs.total, kas_outs.ket, kas_outs.created_at, kas_outs.status, users.name', 'kas_outs',
-    'INNER JOIN users ON users.id = kas_outs.admin_id', "WHERE DATE(kas_outs.created_at)= CURDATE() AND kas_outs.status ='' ");
+$outKas = $config->ProductsJoin('kas_ins.id, kas_ins.title, kas_ins.total, kas_ins.ket, kas_ins.admin_id, kas_ins.status, kas_ins.created_at, users.name', 'kas_ins',
+    'INNER JOIN users ON users.id = kas_ins.admin_id', "WHERE DATE(kas_ins.created_at)= CURDATE() AND kas_ins.status ='' ");
+$totalKas   = $config->Products('created_at, SUM(total) as totalDana', "kas_ins WHERE MONTH(created_at) = MONTH(CURRENT_DATE()) AND YEAR(created_at) = YEAR(CURRENT_DATE()) AND status = ''");
+$totalKas   = $totalKas->fetch(PDO::FETCH_LAZY);
+
+$kasOut     = $config->Products('SUM(total) as totalOut', "kas_outs WHERE MONTH(created_at) = MONTH(CURRENT_DATE()) AND YEAR(created_at) = YEAR(CURRENT_DATE()) AND status = '1'");
+$kasOut     = $kasOut->fetch(PDO::FETCH_LAZY);
+
+if(empty($totalKas['totalDana'])){
+    $danaKas = 'NULL';
+}else{
+    $dana = $totalKas['totalDana']-$kasOut['totalOut'];
+    if($dana > 0 ){
+        $style = 'success';
+    }else{
+        $style = 'danger';
+    }
+    $danaKas = $config->formatPrice($dana);
+}
 ?>
-<div id="listKas">
+<div id="listKasInHeader" <?=$access['read']?>>
     <div class="row">
-        <!--        <div class="col-12 col-sm-4 col-lg-4" id="listPemasukanKas">-->
-        <!--            <div class="card">-->
-        <!--                <div class="card-header">-->
-        <!--                    List Pemasukan-->
-        <!--                </div>-->
-        <!--                <div class="card-body">-->
-        <!---->
-        <!--                    <div class="jumbotron">-->
-        <!--                        ASAP-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <div class="col-12 col-sm-12 col-lg-12" id="listPengeluaranKas">
+        <div class="col-12 col-sm-12 col-lg-12" id="listPemasukanKas">
             <div class="card">
                 <div class="card-header">
-                    List Pengeluaran
+                    List Pemasukkan <div class="pull-right">
+                        <button class="btn btn-sm btn-primary addInKas" <?=$access['create']?> type="button"><span class="fa fa-fw fa-plus"></span> pemasukan</button>
+                    </div>
                 </div>
                 <div class="card-body">
-                    <div id="form-kasKeluar">
+                    <div id="form-kasIn">
                         <div class="card border-dark mb-3">
-                            <div class="card-header bg-transparent border-dark">Form Tambah Pengeluaran Kas</div>
+                            <div class="card-header bg-transparent border-dark">Form Tambah Dana Kas</div>
                             <div class="card-body">
-                                <form id="kasKeluar-form" method="post" data-parsley-validate="" autocomplete="off">
+                                <form id="kasIn-form" method="post" data-parsley-validate="" autocomplete="off">
                                     <div class="form-group">
-                                        <input type="hidden" value="<?=$admin['id']?>" id="adminOut">
+                                        <input type="hidden" value="<?=$admin['id']?>" id="adminIn">
                                         <input type="text"
                                                data-parsley-minLength="3" data-parsley-maxLength="255"
-                                               class="form-control" placeholder="nama pengeluaran" id="nameOut" required>
+                                               class="form-control" placeholder="nama dana kas" id="nameIn" required>
                                     </div>
                                     <div class="form-group">
                                         <input type="text"
                                                data-parsley-type="number"
-                                               class="form-control" placeholder="total biaya" id="biayaOut" required>
+                                               class="form-control" placeholder="total biaya" id="biayaIn" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="5" id="ketOut" required placeholder="keterangan pengeluaran"></textarea>
+                                        <textarea class="form-control" rows="5" id="ketIn" required placeholder="keterangan kas masuk"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-sm btn-block btn-primary">submit pengeluaran</button>
+                                    <button type="submit" class="btn btn-sm btn-block btn-primary">submit pemasukan</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div id="listKasKeluar">
-                        <p>
-                            <button class="btn btn-sm btn-primary addOutKas" <?=$access['create']?> type="button"><span class="fa fa-fw fa-plus"></span> pengeluaran</button>
-                        </p>
-                        <table class="table table-bordered  <?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover" style="text-transform: capitalize;">
+                    <div id="monitoringKasIn">
+                        <div class="card text-center border-success mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Your Kas Balance</h3>
+                                <p class="card-text">Update every time.</p>
+                                <button class="btn btn-lg btn-<?=$style?> showListKasIn">
+                        <?=$danaKas?>
+                                </button>
+                            </div>
+                            <div class="card-footer text-muted">
+                                Updated at: <span class="badge badge-danger"><?=$config->timeAgo($totalKas['created_at'])?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="listKasIn">
+
+                        <table id="kasMasuk" class="table table-bordered  <?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover" style="text-transform: capitalize;">
                             <thead class="thead-light">
                             <tr style="text-transform: lowercase;">
                                 <th scope="col">#</th>
@@ -67,8 +85,8 @@ $outKas = $config->ProductsJoin('kas_outs.id, kas_outs.nama, kas_outs.total, kas
                             <?php if($outKas->rowCount() > 0){ $i = 1; while ($row = $outKas->fetch(PDO::FETCH_LAZY)){ ?>
                                 <tr style="text-transform: lowercase;">
                                     <td><?=$i++?></td>
-                                    <td><?=$row['nama']?></td>
-                                    <td><?=$config->formatPrice($row['total'])?></td>
+                                    <td><?=$row['title']?></td>
+                                    <td style="text-align: right;"><?=number_format($row['total'], '2', ',', '.')?></td>
                                     <td><?=$row['ket']?></td>
                                     <td><?=$row['name']?></td>
                                     <td><i class="small"><?=$row['created_at']?></i></td>
@@ -76,14 +94,14 @@ $outKas = $config->ProductsJoin('kas_outs.id, kas_outs.nama, kas_outs.total, kas
                                         <!--                                        <a href="--><?//=PAYMENT?><!--?p=koDetail&id=--><?//=$row['id']?><!--" --><?//=$access['read']?><!-->
                                         <!--                                            <button class="btn btn-sm btn-primary" style="text-transform: uppercase; font-size: 10px; font-weight: 500;">details</button>-->
                                         <!--                                        </a>-->
-                                        <button class="btn btn-sm btn-danger delKasOut" style="text-transform: uppercase; font-size: 10px; font-weight: 500;"  <?=$access['delete']?> data-id="<?=$row['id']?>" data-admin="<?=$admin['id']?>" >delete</button>
+                                        <button class="btn btn-sm btn-danger delKasIn" style="text-transform: uppercase; font-size: 10px; font-weight: 500;"  <?=$access['delete']?> data-id="<?=$row['id']?>" data-admin="<?=$admin['id']?>" >delete</button>
 
                                     </td>
                                 </tr>
-                            <?php } }else{ echo '<tr><td colspan="7">Belum ada Pengeluaran hari ini!</td></tr>'; } ?>
+                            <?php } }else{ echo '<tr><td colspan="7">Belum ada Pemasukan!</td></tr>'; } ?>
                             </tbody>
                         </table>
-                        <button class="btn btn-sm btn-success reportKasOut" <?=$access['update']?> data-admin="<?=$admin['id']?>">report</button>
+                        <button class="btn btn-sm btn-success reportKasIn" <?=$access['update']?> data-admin="<?=$admin['id']?>">report</button>
                     </div>
                 </div>
             </div>

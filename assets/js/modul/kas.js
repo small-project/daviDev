@@ -1,7 +1,19 @@
 $(document).ready(function () {
-
-    var formOutKas = $('#form-kasKeluar').hide();
-    var listOutKas = $('#listKasKeluar').show();
+    // $('#tableKasOut').DataTable({
+    //     'processing'    : true,
+    //     'serverSide'    : true,
+    //     'ajax'          :
+    //         {
+    //             url : 'php/ajax/listPayment.php?type=kasOut',
+    //             type: 'post'
+    //         }
+    // });
+    // $('#kasMasuk').DataTable();
+    var formOutKas  = $('#form-kasKeluar').hide();
+    var listOutKas  = $('#listKasKeluar').show();
+    var formInKas   = $('#form-kasIn').hide();
+    var listInKas   = $('#listKasIn').hide();
+    var monitoringKas = $('#monitoringKasIn').show();
 
     $('#listPengeluaranKas').on('click', '.addOutKas', function () {
         formOutKas.show();
@@ -51,22 +63,90 @@ $(document).ready(function () {
         }
     });
 
-    listOutKas.on('click', '.reportKasOut', function () {
-        var admin  = $(this).data('admin');
+    $('#reportKasOutAdmin').on('submit', function (e) {
+        e.preventDefault();
+
+        var admin = $('#reportOutAdminID').val();
+        var user  = $('#reportOutAdmin option:selected').val();
+
+        var url = $('#reportOutURL').val();
+
+        var link = url + 'php/ajax/pdfKasOut.php?user='+user+'&admin='+admin;
+        //window.open(url, '_blank');
+
+
 
         if(!confirm('Are you sure want to report this?')){
-            return false;
-        }else{
-            $.ajax({
-                url     : '../php/ajax/payment.php?type=reportKasOut',
-                method  : 'post',
-                data    : { admin: admin },
+                    return false;
+                }else{
 
-                success : function (msg) {
-                    location.reload();
-                    alert(msg);
+                    $.ajax({
+                        url     : '../php/ajax/payment.php?type=reportKasOut',
+                        method  : 'post',
+                        data    : { admin: admin, users: user },
+
+                        success : function (msg) {
+                            if(msg == '0'){
+                                alert('Failed');
+                            }else if(msg == '1'){
+                                window.open(link, '', 'window settings');
+                                alert('Berhasil report data!');
+
+                            }else{
+                                alert('Record belum ada!');
+                            }
+                            location.reload();
+                        }
+                    });
+
                 }
-            })
-        }
-    })
+    });
+
+    // listOutKas.on('click', '.reportKasOut', function () {
+    //     var admin  = $(this).data('admin');
+    //
+    //     if(!confirm('Are you sure want to report this?')){
+    //         return false;
+    //     }else{
+    //         $.ajax({
+    //             url     : '../php/ajax/payment.php?type=reportKasOut',
+    //             method  : 'post',
+    //             data    : { admin: admin },
+    //
+    //             success : function (msg) {
+    //                 location.reload();
+    //                 alert(msg);
+    //             }
+    //         })
+    //     }
+    // })
+
+    $('#listPemasukanKas').on('click', '.addInKas', function () {
+        monitoringKas.hide();
+        formInKas.show();
+    });
+
+    monitoringKas.on('click', '.showListKasIn', function () {
+        listInKas.show();
+    });
+
+    $('#kasIn-form').on('submit', function (e) {
+        e.preventDefault();
+
+        var adm     = $('#adminIn').val();
+        var nama    = $('#nameIn').val();
+        var total   = $('#biayaIn').val();
+        var ket     = $('#ketIn').val();
+
+        $.ajax({
+            url     : '../php/ajax/payment.php?type=addKasIn',
+            method  : 'post',
+            data    : { admin: adm, title: nama, total: total, keterangan: ket },
+
+            success : function (msg) {
+                alert(msg);
+                location.reload();
+            }
+        });
+    });
 })

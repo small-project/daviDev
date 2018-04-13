@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $('#listCorporate').DataTable();
+
     var message = $('#messageCorporate').hide();
 
     $('#newCorporate').on('submit', function (e) {

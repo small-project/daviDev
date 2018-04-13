@@ -3,13 +3,13 @@ $stmt = $config->runQuery("SELECT * FROM corporates ORDER BY created_at DESC");
 $stmt->execute();
 ?>
 
-<div class="card">
+<div class="card" <?=$access['read']?>>
     <div class="card-header">
         List Corporate
     </div>
     <div class="card-body">
 
-        <table class="table table-bordered <?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover" style="text-transform: capitalize;">
+        <table id="listCorporate" class="table table-bordered <?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover" style="text-transform: capitalize;">
             <thead class="thead-light">
             <tr>
                 <th scope="col">#</th>

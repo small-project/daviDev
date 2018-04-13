@@ -31,7 +31,7 @@
                                     <div class="form-group">
                                         <input type="hidden" value="<?=$admin['id']?>" id="adminOut">
                                         <input type="text"
-                                               data-parsley-minLength="3" data-parsley-maxLength="255"
+                                               data-parsley-minLength="3" data-parsley-maxLength="36" data-parsley-message-maxLength="lebih"
                                                class="form-control" placeholder="nama pengeluaran" id="nameOut" required>
                                     </div>
                                     <div class="form-group">
@@ -66,13 +66,13 @@
                             <tbody>
                             <?php if($outKas->rowCount() > 0){ $i = 1; while ($row = $outKas->fetch(PDO::FETCH_LAZY)){ ?>
                                 <tr style="text-transform: lowercase;">
-                                    <td><?=$i++?></td>
-                                    <td><?=$row['nama']?></td>
-                                    <td><?=$config->formatPrice($row['total'])?></td>
-                                    <td><?=$row['ket']?></td>
-                                    <td><?=$row['name']?></td>
-                                    <td><i class="small"><?=$row['created_at']?></i></td>
-                                    <td>
+                                    <td width="5%"><?=$i++?></td>
+                                    <td width="20%"><?=$row['nama']?></td>
+                                    <td width="15%" style="text-align: l"><?=$config->formatPrice($row['total'])?></td>
+                                    <td width="35%"><?=$row['ket']?></td>
+                                    <td width="15%"><?=$row['name']?></td>
+                                    <td width="15%"><i class="small"><?=$row['created_at']?></i></td>
+                                    <td width="10%">
 <!--                                        <a href="--><?//=PAYMENT?><!--?p=koDetail&id=--><?//=$row['id']?><!--" --><?//=$access['read']?><!-->
 <!--                                            <button class="btn btn-sm btn-primary" style="text-transform: uppercase; font-size: 10px; font-weight: 500;">details</button>-->
 <!--                                        </a>-->
@@ -83,7 +83,23 @@
                             <?php } }else{ echo '<tr><td colspan="7">Belum ada Pengeluaran hari ini!</td></tr>'; } ?>
                             </tbody>
                         </table>
-                        <button class="btn btn-sm btn-success reportKasOut" <?=$access['update']?> data-admin="<?=$admin['id']?>">report</button>
+                        <form <?=$access['update']?> action="" id="reportKasOutAdmin" data-parsley-validate="" autocomplete="off">
+                            <div class="form-row align-items-center">
+                                <div class="col-auto my-1">
+                                    <input type="hidden" value="<?=$admin['id']?>" id="reportOutAdminID">
+                                    <input type="hidden" value="<?=URL?>" id="reportOutURL">
+                                    <select class="custom-select form-control-sm mr-sm-2" id="reportOutAdmin" required>
+                                        <option value="">Choose...</option>
+                                        <?php while ($cols = $listAdmin->fetch(PDO::FETCH_LAZY)){ ?>
+                                        <option value="<?=$cols['id']?>"><?=$cols['name']?></option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
+                                <div class="col-auto my-1">
+                                    <button type="submit" class="btn btn-sm btn-success">report</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

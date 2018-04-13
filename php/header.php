@@ -15,8 +15,9 @@
 
     <!-- Custom styles for this template -->
     <link href="<?=URL?>assets/css/offcanvas.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?=URL?>assets/vendors/dataTables/css/dataTables.bootstrap4.min.css"/>
 </head>
 
 <body class="bg-light">
     <?php require_once 'navigation.php'; ?>
-<main role="main" class="container-fluid">
+<main role="main" class="container-fluid2">

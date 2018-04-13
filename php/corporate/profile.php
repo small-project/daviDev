@@ -7,7 +7,7 @@ INNER JOIN states ON states.lokasi_ID = corporates.provinsi WHERE corporates.id 
 $stmt->execute(array(':a' => $id));
 $info = $stmt->fetch(PDO::FETCH_LAZY);
 ?>
-<div class="row justify-content-center" id="newAdmin">
+<div class="row justify-content-center" id="newAdmin" <?=$access['read']?>>
     <div class="col-12 col-sm-8 col-lg-6">
         <div class="card text-white bg-success mb-3">
             <div class="card-header">

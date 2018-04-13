@@ -2,53 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9766f3cf-e83b-43df-a629-d4cb71629c15" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/login.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/modul/kas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/modul/management.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bd.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/customer.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/florist.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kurir.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/management.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/order.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/ajax/management.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/ajax/payment.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/ajax/submenu.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/bd/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/customer/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/florist/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/kurir/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/management/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/management/menu.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/management/profile.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/management/users.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/order/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/payment/kasIn.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/payment/kasOut.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/php/sales/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sales.php" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/php/ajax/listPayment.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/php/ajax/pdfKasOut.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/assets/css/offcanvas.css" afterPath="$PROJECT_DIR$/assets/css/offcanvas.css" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modul/corporate.js" afterPath="$PROJECT_DIR$/assets/js/modul/corporate.js" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modul/kas.js" afterPath="$PROJECT_DIR$/assets/js/modul/kas.js" />
       <change beforePath="$PROJECT_DIR$/config/api.php" afterPath="$PROJECT_DIR$/config/api.php" />
       <change beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" afterPath="$PROJECT_DIR$/config/session.php" />
-      <change beforePath="$PROJECT_DIR$/corporate.php" afterPath="$PROJECT_DIR$/corporate.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
-      <change beforePath="$PROJECT_DIR$/payment.php" afterPath="$PROJECT_DIR$/payment.php" />
+      <change beforePath="$PROJECT_DIR$/php/ajax/payment.php" afterPath="$PROJECT_DIR$/php/ajax/payment.php" />
       <change beforePath="$PROJECT_DIR$/php/corporate/index.php" afterPath="$PROJECT_DIR$/php/corporate/index.php" />
-      <change beforePath="$PROJECT_DIR$/php/corporate/new.php" afterPath="$PROJECT_DIR$/php/corporate/newCP.php" />
       <change beforePath="$PROJECT_DIR$/php/corporate/profile.php" afterPath="$PROJECT_DIR$/php/corporate/profile.php" />
-      <change beforePath="$PROJECT_DIR$/php/dashboard/index.php" afterPath="$PROJECT_DIR$/php/dashboard/index.php" />
       <change beforePath="$PROJECT_DIR$/php/footer.php" afterPath="$PROJECT_DIR$/php/footer.php" />
       <change beforePath="$PROJECT_DIR$/php/header.php" afterPath="$PROJECT_DIR$/php/header.php" />
-      <change beforePath="$PROJECT_DIR$/php/navigation.php" afterPath="$PROJECT_DIR$/php/navigation.php" />
-      <change beforePath="$PROJECT_DIR$/php/payment/delivery.php" afterPath="$PROJECT_DIR$/php/order/delivery.php" />
-      <change beforePath="$PROJECT_DIR$/php/payment/new.php" afterPath="$PROJECT_DIR$/php/order/order.php" />
-      <change beforePath="$PROJECT_DIR$/php/payment/neworder.php" afterPath="$PROJECT_DIR$/php/order/neworder.php" />
-      <change beforePath="$PROJECT_DIR$/php/payment/process.php" afterPath="$PROJECT_DIR$/php/order/process.php" />
-      <change beforePath="$PROJECT_DIR$/php/payment/report.php" afterPath="$PROJECT_DIR$/php/order/report.php" />
+      <change beforePath="$PROJECT_DIR$/php/payment/kasIn.php" afterPath="$PROJECT_DIR$/php/payment/kasIn.php" />
+      <change beforePath="$PROJECT_DIR$/php/payment/kasOut.php" afterPath="$PROJECT_DIR$/php/payment/kasOut.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,37 +27,126 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="payment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/payment.php">
+      <file leaf-file-name="kasIn.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/payment/kasIn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+            <state relative-caret-position="484">
+              <caret line="65" column="42" lean-forward="false" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
               <folding>
-                <marker date="1523482307051" expanded="true" signature="352:445" ph="INSERT INTO kas_outs... " />
-                <marker date="1523482307051" expanded="true" signature="1190:1265" ph="SELECT SUM(t... kas_outs" />
-                <marker date="1523482307051" expanded="true" signature="1479:1546" ph="UPDATE kas_outs... " />
-                <marker date="1523482307051" expanded="true" signature="1618:1719" ph="INSERT INTO kas_outs... " />
+                <marker date="1523645571190" expanded="true" signature="1096:1385" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1167:1385" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1198:1385" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1240:1385" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1301:1385" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1558:2072" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1600:2072" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1660:2072" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1819:2072" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1932:2072" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="1993:2072" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="2154:2374" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="2478:2771" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="2538:2728" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="2832:3022" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="3327:3975" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="3402:3975" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="3454:3812" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="3697:3777" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="3877:3975" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="4142:4229" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="4398:4977" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="4466:4940" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="5013:5311" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="5207:5311" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="5375:5393" ph="..." />
+                <marker date="1523645571190" expanded="true" signature="5703:5846" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kasIn.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/payment/kasIn.php">
+      <file leaf-file-name="listPayment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ajax/listPayment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="92" column="6" lean-forward="false" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
+            <state relative-caret-position="433">
+              <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kasOut.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="293" column="27" lean-forward="false" selection-start-line="293" selection-start-column="27" selection-end-line="293" selection-end-column="27" />
+              <folding>
+                <element signature="n#weightPages#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#paginglinkURL#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#paginglinkURLJquery#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#CodeOrder#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#timeAgo#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#systemInfo#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#generateRandomString#0;n#Admin#0;n#!!top" expanded="false" />
+                <marker date="1523646173941" expanded="true" signature="362:400" ph="SELECT * FRO... users" />
+                <marker date="1523646173941" expanded="true" signature="2462:2553" ph="SELECT id, n... users" />
+                <marker date="1523646173941" expanded="true" signature="2715:2806" ph="SELECT id, n... users" />
+                <marker date="1523646173941" expanded="true" signature="16831:16843" ph="DELETE FROM ${$table}... " />
+                <marker date="1523646173941" expanded="true" signature="16831:16861" ph="DELETE FROM ${$table}... " />
+                <marker date="1523646173941" expanded="true" signature="16831:16862" ph="DELETE FROM ${$table}... " />
+                <marker date="1523646173941" expanded="true" signature="16831:16863" ph="DELETE FROM ${$table}... " />
+                <marker date="1523646173941" expanded="true" signature="16831:16876" ph="DELETE FROM ${$table}... " />
+                <marker date="1523646173941" expanded="true" signature="16831:16877" ph="DELETE FROM ${$table}... " />
+                <marker date="1523646173941" expanded="true" signature="16831:16878" ph="DELETE FROM ${$table}... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kasOut.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/payment/kasOut.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="85" column="61" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="33" column="139" lean-forward="false" selection-start-line="33" selection-start-column="139" selection-end-line="33" selection-end-column="139" />
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/modul/kas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="e#661#722#0" expanded="false" />
+                <element signature="e#767#1346#0" expanded="false" />
+                <element signature="e#1403#1972#0" expanded="false" />
+                <element signature="e#3260#3316#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ajax/payment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="115" column="42" lean-forward="false" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+              <folding>
+                <marker date="1523642085446" expanded="true" signature="352:445" ph="INSERT INTO kas_outs... " />
+                <marker date="1523642085446" expanded="true" signature="1216:1291" ph="SELECT SUM(t... kas_outs" />
+                <marker date="1523642085446" expanded="true" signature="1216:1329" ph="SELECT SUM(t... kas_outs" />
+                <marker date="1523642085446" expanded="true" signature="1579:1646" ph="UPDATE kas_outs... " />
+                <marker date="1523642085446" expanded="true" signature="1579:1684" ph="UPDATE kas_outs... " />
+                <marker date="1523642085446" expanded="true" signature="1799:1900" ph="INSERT INTO kas_outs... " />
+                <marker date="1523642085446" expanded="true" signature="2599:2660" ph="INSERT INTO kas_ins... " />
+                <marker date="1523642085446" expanded="true" signature="2599:2690" ph="INSERT INTO kas_ins... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,6 +172,12 @@
       <find>display: block</find>
       <find>display: inline-block</find>
       <find>display: display;</find>
+      <find>reportKasOut</find>
+      <find>$this-&gt;data</find>
+      <find>$baris</find>
+      <find>$this-&gt;Row</find>
+      <find>addKasIn</find>
+      <find>$query2</find>
     </findStrings>
     <replaceStrings>
       <replace>$menu</replace>
@@ -132,9 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/.htaccess" />
-        <option value="$PROJECT_DIR$/php/corporate.php" />
-        <option value="$PROJECT_DIR$/php/default.php" />
         <option value="$PROJECT_DIR$/php/profileCP.php" />
         <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/php/payment/index.php" />
@@ -142,8 +202,6 @@
         <option value="$PROJECT_DIR$/php/ajax/states.php" />
         <option value="$PROJECT_DIR$/assets/vendors/parsley/parsley.min.js" />
         <option value="$PROJECT_DIR$/php/ajax/corporate.php" />
-        <option value="$PROJECT_DIR$/assets/js/modul/corporate.js" />
-        <option value="$PROJECT_DIR$/assets/css/offcanvas.css" />
         <option value="$PROJECT_DIR$/php/payment/neworder.php" />
         <option value="$PROJECT_DIR$/php/ajax/order.php" />
         <option value="$PROJECT_DIR$/assets/js/modul/order.js" />
@@ -153,7 +211,6 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/php/dashboard/index.php" />
-        <option value="$PROJECT_DIR$/php/footer.php" />
         <option value="$PROJECT_DIR$/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/php/navigation.php" />
         <option value="$PROJECT_DIR$/customer.php" />
@@ -167,22 +224,28 @@
         <option value="$PROJECT_DIR$/payment.php" />
         <option value="$PROJECT_DIR$/management.php" />
         <option value="$PROJECT_DIR$/php/order/neworder.php" />
-        <option value="$PROJECT_DIR$/php/corporate/index.php" />
-        <option value="$PROJECT_DIR$/php/corporate/profile.php" />
         <option value="$PROJECT_DIR$/php/management/menu.php" />
         <option value="$PROJECT_DIR$/php/ajax/submenu.php" />
         <option value="$PROJECT_DIR$/php/management/users.php" />
-        <option value="$PROJECT_DIR$/php/header.php" />
         <option value="$PROJECT_DIR$/php/management/profile.php" />
         <option value="$PROJECT_DIR$/assets/js/modul/management.js" />
         <option value="$PROJECT_DIR$/php/ajax/management.php" />
-        <option value="$PROJECT_DIR$/config/api.php" />
-        <option value="$PROJECT_DIR$/assets/js/modul/kas.js" />
         <option value="$PROJECT_DIR$/php/payment/kas.php" />
-        <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/php/corporate/new.php" />
+        <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/php/ajax/pdfKasOut.php" />
+        <option value="$PROJECT_DIR$/php/header.php" />
+        <option value="$PROJECT_DIR$/php/footer.php" />
+        <option value="$PROJECT_DIR$/assets/css/offcanvas.css" />
+        <option value="$PROJECT_DIR$/assets/js/modul/corporate.js" />
+        <option value="$PROJECT_DIR$/php/corporate/index.php" />
+        <option value="$PROJECT_DIR$/php/corporate/profile.php" />
         <option value="$PROJECT_DIR$/php/ajax/payment.php" />
+        <option value="$PROJECT_DIR$/php/ajax/listPayment.php" />
+        <option value="$PROJECT_DIR$/assets/js/modul/kas.js" />
         <option value="$PROJECT_DIR$/php/payment/kasIn.php" />
+        <option value="$PROJECT_DIR$/config/api.php" />
+        <option value="$PROJECT_DIR$/php/payment/kasOut.php" />
       </list>
     </option>
   </component>
@@ -239,6 +302,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,6 +315,12 @@
               <item name="bungdav" type="b2602c69:ProjectViewProjectNode" />
               <item name="bungdav" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="bungdav" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bungdav" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="bungdav" type="b2602c69:ProjectViewProjectNode" />
@@ -284,32 +355,12 @@
               <item name="bungdav" type="b2602c69:ProjectViewProjectNode" />
               <item name="bungdav" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="corporate" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bungdav" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bungdav" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="management" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bungdav" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bungdav" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="order" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="bungdav" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bungdav" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="payment" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -354,12 +405,23 @@
       <workItem from="1523342564629" duration="18035000" />
       <workItem from="1523369120528" duration="9096000" />
       <workItem from="1523443534622" duration="7838000" />
-      <workItem from="1523456922468" duration="23309000" />
+      <workItem from="1523456922468" duration="23381000" />
+      <workItem from="1523544423751" duration="6159000" />
+      <workItem from="1523608341252" duration="918000" />
+      <workItem from="1523615009193" duration="22742000" />
     </task>
+    <task id="LOCAL-00001" summary="new kas">
+      <created>1523484393211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523484393211</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104855000" />
+    <option name="totallyTimeSpent" value="134746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -390,6 +452,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new kas" />
+    <option name="LAST_COMMIT_MESSAGE" value="new kas" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -408,20 +474,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/order/delivery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/order/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/order/order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -433,13 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/offcanvas.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="136" column="1" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="136" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -482,25 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <marker date="1522593583326" expanded="true" signature="569:642" ph="INSERT INTO detail_trxs... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/ajax/corporate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/modul/corporate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -515,15 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -539,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -619,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -627,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,28 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/corporate/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="35" column="94" lean-forward="false" selection-start-line="35" selection-start-column="94" selection-end-line="35" selection-end-column="94" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#a#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <marker date="1523469216193" expanded="true" signature="33:82" ph="SELECT * FRO... corporates" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/corporate/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="73" column="99" lean-forward="false" selection-start-line="73" selection-start-column="99" selection-end-line="73" selection-end-column="99" />
-          <folding>
-            <marker date="1523469230666" expanded="true" signature="52:514" ph="SELECT corpo... corporates" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="88" lean-forward="true" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,17 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#nav#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,13 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="152" column="54" lean-forward="false" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="54" />
-          <folding>
-            <element signature="e#493#552#0" expanded="false" />
-            <element signature="e#603#1338#0" expanded="false" />
-            <element signature="e#1391#1587#0" expanded="false" />
-            <element signature="e#1645#1891#0" expanded="false" />
-            <element signature="e#1944#2622#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,14 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="688">
           <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
-          <folding>
-            <marker date="1523474666144" expanded="true" signature="439:554" ph="INSERT INTO users... " />
-            <marker date="1523474666144" expanded="true" signature="1056:1123" ph="INSERT INTO sub_menus... " />
-            <marker date="1523474666144" expanded="true" signature="1464:1517" ph="SELECT id, s... sub_menus" />
-            <marker date="1523474666144" expanded="true" signature="2128:2204" ph="INSERT INTO previllages... " />
-            <marker date="1523474666144" expanded="true" signature="2128:2232" ph="INSERT INTO previllages... " />
-            <marker date="1523474666144" expanded="true" signature="2751:2814" ph="UPDATE previllages... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,81 +729,201 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="239" column="11" lean-forward="false" selection-start-line="239" selection-start-column="11" selection-end-line="239" selection-end-column="11" />
-          <folding>
-            <element signature="n#paging#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#paginglink#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#paginglinkURL#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#paginglinkURLJquery#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#CodeOrder#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#getDate#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#systemInfo#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#generateRandomString#0;n#Admin#0;n#!!top" expanded="false" />
-            <marker date="1523475220583" expanded="true" signature="362:400" ph="SELECT * FRO... users" />
-            <marker date="1523475220583" expanded="true" signature="14515:14527" ph="DELETE FROM ${$table}... " />
-            <marker date="1523475220583" expanded="true" signature="14515:14545" ph="DELETE FROM ${$table}... " />
-            <marker date="1523475220583" expanded="true" signature="14515:14546" ph="DELETE FROM ${$table}... " />
-            <marker date="1523475220583" expanded="true" signature="14515:14547" ph="DELETE FROM ${$table}... " />
-            <marker date="1523475220583" expanded="true" signature="14515:14560" ph="DELETE FROM ${$table}... " />
-            <marker date="1523475220583" expanded="true" signature="14515:14561" ph="DELETE FROM ${$table}... " />
-            <marker date="1523475220583" expanded="true" signature="14515:14562" ph="DELETE FROM ${$table}... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/modul/kas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="62" column="41" lean-forward="false" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/corporate/newCP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="48" column="52" lean-forward="false" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+        <state relative-caret-position="935">
+          <caret line="55" column="85" lean-forward="false" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ajax/pdfKasOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="false" />
+            <marker date="1523630497842" expanded="true" signature="444:577" ph="SELECT nama,... kas_outs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/offcanvas.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1487">
+          <caret line="149" column="1" lean-forward="true" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/modul/corporate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/corporate/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <marker date="1523636375676" expanded="true" signature="33:82" ph="SELECT * FRO... corporates" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/corporate/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="74" lean-forward="false" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+          <folding>
+            <marker date="1523636403642" expanded="true" signature="52:514" ph="SELECT corpo... corporates" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/ajax/payment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        <state relative-caret-position="535">
+          <caret line="115" column="42" lean-forward="false" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
           <folding>
-            <marker date="1523482307051" expanded="true" signature="352:445" ph="INSERT INTO kas_outs... " />
-            <marker date="1523482307051" expanded="true" signature="1190:1265" ph="SELECT SUM(t... kas_outs" />
-            <marker date="1523482307051" expanded="true" signature="1479:1546" ph="UPDATE kas_outs... " />
-            <marker date="1523482307051" expanded="true" signature="1618:1719" ph="INSERT INTO kas_outs... " />
+            <marker date="1523642085446" expanded="true" signature="352:445" ph="INSERT INTO kas_outs... " />
+            <marker date="1523642085446" expanded="true" signature="1216:1291" ph="SELECT SUM(t... kas_outs" />
+            <marker date="1523642085446" expanded="true" signature="1216:1329" ph="SELECT SUM(t... kas_outs" />
+            <marker date="1523642085446" expanded="true" signature="1579:1646" ph="UPDATE kas_outs... " />
+            <marker date="1523642085446" expanded="true" signature="1579:1684" ph="UPDATE kas_outs... " />
+            <marker date="1523642085446" expanded="true" signature="1799:1900" ph="INSERT INTO kas_outs... " />
+            <marker date="1523642085446" expanded="true" signature="2599:2660" ph="INSERT INTO kas_ins... " />
+            <marker date="1523642085446" expanded="true" signature="2599:2690" ph="INSERT INTO kas_ins... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/payment/kasOut.php">
+    <entry file="file://$PROJECT_DIR$/php/ajax/corporate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="85" column="61" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="92" selection-end-column="6" />
+        <state relative-caret-position="68">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/modul/kas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#661#722#0" expanded="false" />
+            <element signature="e#767#1346#0" expanded="false" />
+            <element signature="e#1403#1972#0" expanded="false" />
+            <element signature="e#3260#3316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ajax/listPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/payment/kasIn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="92" column="6" lean-forward="false" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="484">
+          <caret line="65" column="42" lean-forward="false" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding>
+            <marker date="1523645571190" expanded="true" signature="1096:1385" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1167:1385" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1198:1385" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1240:1385" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1301:1385" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1558:2072" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1600:2072" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1660:2072" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1819:2072" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1932:2072" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="1993:2072" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="2154:2374" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="2478:2771" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="2538:2728" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="2832:3022" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="3327:3975" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="3402:3975" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="3454:3812" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="3697:3777" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="3877:3975" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="4142:4229" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="4398:4977" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="4466:4940" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="5013:5311" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="5207:5311" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="5375:5393" ph="..." />
+            <marker date="1523645571190" expanded="true" signature="5703:5846" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="293" column="27" lean-forward="false" selection-start-line="293" selection-start-column="27" selection-end-line="293" selection-end-column="27" />
+          <folding>
+            <element signature="n#weightPages#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#paginglinkURL#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#paginglinkURLJquery#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#CodeOrder#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#timeAgo#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#systemInfo#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#generateRandomString#0;n#Admin#0;n#!!top" expanded="false" />
+            <marker date="1523646173941" expanded="true" signature="362:400" ph="SELECT * FRO... users" />
+            <marker date="1523646173941" expanded="true" signature="2462:2553" ph="SELECT id, n... users" />
+            <marker date="1523646173941" expanded="true" signature="2715:2806" ph="SELECT id, n... users" />
+            <marker date="1523646173941" expanded="true" signature="16831:16843" ph="DELETE FROM ${$table}... " />
+            <marker date="1523646173941" expanded="true" signature="16831:16861" ph="DELETE FROM ${$table}... " />
+            <marker date="1523646173941" expanded="true" signature="16831:16862" ph="DELETE FROM ${$table}... " />
+            <marker date="1523646173941" expanded="true" signature="16831:16863" ph="DELETE FROM ${$table}... " />
+            <marker date="1523646173941" expanded="true" signature="16831:16876" ph="DELETE FROM ${$table}... " />
+            <marker date="1523646173941" expanded="true" signature="16831:16877" ph="DELETE FROM ${$table}... " />
+            <marker date="1523646173941" expanded="true" signature="16831:16878" ph="DELETE FROM ${$table}... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/payment/kasOut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="139" lean-forward="false" selection-start-line="33" selection-start-column="139" selection-end-line="33" selection-end-column="139" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

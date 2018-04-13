@@ -9,6 +9,9 @@
 <script src="<?=URL?>assets/js/bootstrap.min.js"></script>
 <script src="<?=URL?>assets/vendors/dll/holder.min.js"></script>
 <script src="<?=URL?>assets/vendors/dll/offcanvas.js"></script>
+<script type="text/javascript" src="<?=URL?>assets/vendors/dataTables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?=URL?>assets/vendors/dataTables/js/dataTables.bootstrap4.min.js"></script>
+
 
 <script src="<?=URL?>assets/js/custom.js"></script>
 <?php if($menu == 'corporate'){ ?>
