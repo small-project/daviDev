@@ -1,14 +1,6 @@
 $(document).ready(function () {
-    // $('#tableKasOut').DataTable({
-    //     'processing'    : true,
-    //     'serverSide'    : true,
-    //     'ajax'          :
-    //         {
-    //             url : 'php/ajax/listPayment.php?type=kasOut',
-    //             type: 'post'
-    //         }
-    // });
-    // $('#kasMasuk').DataTable();
+    $('#tableKasOut').DataTable();
+    $('#kasMasuk').DataTable();
     var formOutKas  = $('#form-kasKeluar').hide();
     var listOutKas  = $('#listKasKeluar').show();
     var formInKas   = $('#form-kasIn').hide();

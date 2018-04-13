@@ -51,7 +51,7 @@
                         <p>
                             <button class="btn btn-sm btn-primary addOutKas" <?=$access['create']?> type="button"><span class="fa fa-fw fa-plus"></span> pengeluaran</button>
                         </p>
-                        <table class="table table-bordered  <?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover" style="text-transform: capitalize;">
+                        <table id="tableKasOut" class="table table-bordered  <?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover" style="text-transform: capitalize;">
                             <thead class="thead-light">
                             <tr style="text-transform: lowercase;">
                                 <th scope="col">#</th>
@@ -64,7 +64,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <?php if($outKas->rowCount() > 0){ $i = 1; while ($row = $outKas->fetch(PDO::FETCH_LAZY)){ ?>
+                            <?php  $i = 1; while ($row = $outKas->fetch(PDO::FETCH_LAZY)){ ?>
                                 <tr style="text-transform: lowercase;">
                                     <td width="5%"><?=$i++?></td>
                                     <td width="20%"><?=$row['nama']?></td>
@@ -80,7 +80,7 @@
 
                                     </td>
                                 </tr>
-                            <?php } }else{ echo '<tr><td colspan="7">Belum ada Pengeluaran hari ini!</td></tr>'; } ?>
+                            <?php } ?>
                             </tbody>
                         </table>
                         <form <?=$access['update']?> action="" id="reportKasOutAdmin" data-parsley-validate="" autocomplete="off">

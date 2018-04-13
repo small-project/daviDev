@@ -82,7 +82,7 @@ if(empty($totalKas['totalDana'])){
                             </tr>
                             </thead>
                             <tbody>
-                            <?php if($outKas->rowCount() > 0){ $i = 1; while ($row = $outKas->fetch(PDO::FETCH_LAZY)){ ?>
+                            <?php $i = 1; while ($row = $outKas->fetch(PDO::FETCH_LAZY)){ ?>
                                 <tr style="text-transform: lowercase;">
                                     <td><?=$i++?></td>
                                     <td><?=$row['title']?></td>
@@ -98,7 +98,7 @@ if(empty($totalKas['totalDana'])){
 
                                     </td>
                                 </tr>
-                            <?php } }else{ echo '<tr><td colspan="7">Belum ada Pemasukan!</td></tr>'; } ?>
+                            <?php } ?>
                             </tbody>
                         </table>
                         <button class="btn btn-sm btn-success reportKasIn" <?=$access['update']?> data-admin="<?=$admin['id']?>">report</button>
