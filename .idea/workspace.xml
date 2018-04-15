@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9766f3cf-e83b-43df-a629-d4cb71629c15" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modul/kas.js" afterPath="$PROJECT_DIR$/assets/js/modul/kas.js" />
-      <change beforePath="$PROJECT_DIR$/php/payment/kasIn.php" afterPath="$PROJECT_DIR$/php/payment/kasIn.php" />
-      <change beforePath="$PROJECT_DIR$/php/payment/kasOut.php" afterPath="$PROJECT_DIR$/php/payment/kasOut.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,122 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kasIn.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/payment/kasIn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="100" column="36" lean-forward="false" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listPayment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/listPayment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2839">
-              <caret line="293" column="27" lean-forward="false" selection-start-line="293" selection-start-column="27" selection-end-line="293" selection-end-column="27" />
-              <folding>
-                <element signature="n#weightPages#0;n#Admin#0;n#!!top" expanded="false" />
-                <element signature="n#paginglinkURL#0;n#Admin#0;n#!!top" expanded="false" />
-                <element signature="n#paginglinkURLJquery#0;n#Admin#0;n#!!top" expanded="false" />
-                <element signature="n#CodeOrder#0;n#Admin#0;n#!!top" expanded="false" />
-                <element signature="n#timeAgo#0;n#Admin#0;n#!!top" expanded="false" />
-                <element signature="n#systemInfo#0;n#Admin#0;n#!!top" expanded="false" />
-                <element signature="n#generateRandomString#0;n#Admin#0;n#!!top" expanded="false" />
-                <marker date="1523646173941" expanded="true" signature="362:400" ph="SELECT * FRO... users" />
-                <marker date="1523646173941" expanded="true" signature="2462:2553" ph="SELECT id, n... users" />
-                <marker date="1523646173941" expanded="true" signature="2715:2806" ph="SELECT id, n... users" />
-                <marker date="1523646173941" expanded="true" signature="16831:16843" ph="DELETE FROM ${$table}... " />
-                <marker date="1523646173941" expanded="true" signature="16831:16861" ph="DELETE FROM ${$table}... " />
-                <marker date="1523646173941" expanded="true" signature="16831:16862" ph="DELETE FROM ${$table}... " />
-                <marker date="1523646173941" expanded="true" signature="16831:16863" ph="DELETE FROM ${$table}... " />
-                <marker date="1523646173941" expanded="true" signature="16831:16876" ph="DELETE FROM ${$table}... " />
-                <marker date="1523646173941" expanded="true" signature="16831:16877" ph="DELETE FROM ${$table}... " />
-                <marker date="1523646173941" expanded="true" signature="16831:16878" ph="DELETE FROM ${$table}... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kasOut.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/payment/kasOut.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/corporate/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
-              <folding>
-                <marker date="1523636375676" expanded="true" signature="33:82" ph="SELECT * FRO... corporates" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="corporate.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/modul/corporate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kas.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/modul/kas.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="19" />
-              <folding>
-                <element signature="e#415#476#0" expanded="false" />
-                <element signature="e#521#1100#0" expanded="false" />
-                <element signature="e#1157#1726#0" expanded="false" />
-                <element signature="e#3014#3070#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/payment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1955">
-              <caret line="115" column="42" lean-forward="false" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
-              <folding>
-                <marker date="1523642085446" expanded="true" signature="352:445" ph="INSERT INTO kas_outs... " />
-                <marker date="1523642085446" expanded="true" signature="1216:1291" ph="SELECT SUM(t... kas_outs" />
-                <marker date="1523642085446" expanded="true" signature="1216:1329" ph="SELECT SUM(t... kas_outs" />
-                <marker date="1523642085446" expanded="true" signature="1579:1646" ph="UPDATE kas_outs... " />
-                <marker date="1523642085446" expanded="true" signature="1579:1684" ph="UPDATE kas_outs... " />
-                <marker date="1523642085446" expanded="true" signature="1799:1900" ph="INSERT INTO kas_outs... " />
-                <marker date="1523642085446" expanded="true" signature="2599:2660" ph="INSERT INTO kas_ins... " />
-                <marker date="1523642085446" expanded="true" signature="2599:2690" ph="INSERT INTO kas_ins... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -394,7 +276,7 @@
       <workItem from="1523544423751" duration="6159000" />
       <workItem from="1523608341252" duration="918000" />
       <workItem from="1523615009193" duration="22972000" />
-      <workItem from="1523646910793" duration="323000" />
+      <workItem from="1523646910793" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="new kas">
       <created>1523484393211</created>
@@ -410,16 +292,23 @@
       <option name="project" value="LOCAL" />
       <updated>1523646485784</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bugs datatable">
+      <created>1523647237300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523647237300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135299000" />
+    <option name="totallyTimeSpent" value="135520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -878,7 +767,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/payment/kasOut.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="816">
           <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
           <folding />
         </state>
