@@ -1,7 +1,9 @@
 <?php
+session_start();
 require '../../config/api.php';
 $config = new Admin();
 
+$admin = $_SESSION['user_session'];
     if(isset($_GET['id'])){
         $id = $_GET['id'];
         $title = $_GET['title'];
@@ -33,7 +35,7 @@ $config = new Admin();
                                 <td><?=$menu['submenu']?></td>
                                 <td><?=$menu['link']?></td>
                                 <td>
-                                        <button class="btn btn-sm btn-danger delSubMenu" data-id="<?=$menu['id']?>" style="text-transform: uppercase; font-size: 10px; font-weight: 500;"><i class="fa fa-fw fa-trash"></i></button>
+                                        <button class="btn btn-sm btn-danger delSubMenu" data-id="<?=$menu['id']?>" data-admin="<?=$admin?>" style="text-transform: uppercase; font-size: 10px; font-weight: 500;"><i class="fa fa-fw fa-trash"></i></button>
 
                                 </td>
                             </tr>

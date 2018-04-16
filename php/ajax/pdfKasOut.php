@@ -22,7 +22,7 @@ $user = $user->fetch(PDO::FETCH_LAZY);
 
 $user = $user['name'];
 
-$tanggal = date('d M Y');
+$tanggal = $config->getDate('d M Y');
 
 $stmt = $config->runQuery("SELECT nama, total, ket, created_at, admin_id FROM kas_outs WHERE DATE(created_at) = CURDATE() AND admin_id = :admin AND status = '1'");
 $stmt->execute(array(

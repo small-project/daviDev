@@ -119,7 +119,7 @@ INNER JOIN previllages ON previllages.id_submenu = sub_menus.id', 'WHERE menus.i
                                             $weg = $config->weightPages($cols['weight']);
                                             $weight = $weg['weight'];
                                             ?>
-                                            <li class="list-group-item"><?=$cols['submenu']?> <button class="badge badge-pill badge-primary align-text-bottom updatePrevillages" type="button" data-id="<?=$cols['id']?>" data-toggle="modal" data-target="#updatePrevillage"><?=$weight?></button></li>
+                                            <li class="list-group-item"><a href="#" onclick="delPrevillage(<?=$cols['id']?>, <?=$admin['id']?>, <?=$admin_id?>)"><?=$cols['submenu']?></a> <button class="badge badge-pill badge-primary align-text-bottom updatePrevillages" type="button" data-id="<?=$cols['id']?>" data-toggle="modal" data-target="#updatePrevillage"><?=$weight?></button></li>
                                         <?php } ?>
                                     </ul>
                                 </div>

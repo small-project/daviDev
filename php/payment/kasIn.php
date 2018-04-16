@@ -7,17 +7,37 @@ $totalKas   = $totalKas->fetch(PDO::FETCH_LAZY);
 $kasOut     = $config->Products('SUM(total) as totalOut', "kas_outs WHERE MONTH(created_at) = MONTH(CURRENT_DATE()) AND YEAR(created_at) = YEAR(CURRENT_DATE()) AND status = '1'");
 $kasOut     = $kasOut->fetch(PDO::FETCH_LAZY);
 
-if(empty($totalKas['totalDana'])){
-    $danaKas = 'NULL';
-}else{
-    $dana = $totalKas['totalDana']-$kasOut['totalOut'];
-    if($dana > 0 ){
+$sql = "SELECT pay_kurirs.id, pay_kurirs.total FROM pay_kurirs WHERE pay_kurirs.total != '' AND MONTH(pay_kurirs.created_at) = MONTH(CURRENT_DATE()) AND YEAR(pay_kurirs.created_at) = YEAR(CURRENT_DATE())";
+$kurir   = $config->runQuery($sql);
+$kurir->execute();
+
+$payKurir = $kurir->fetch(PDO::FETCH_LAZY);
+
+    if(empty($totalKas['totalDana'])){
+        $danaKas = 0;
+    }else{
+        $danaKas = $totalKas['totalDana'];
+    }
+    if(empty($kasOut['totalOut'])){
+        $kasOut = 0;
+    }else{
+        $kasOut = $kasOut['totalOut'];
+    }
+
+    if(empty($payKurir['total'])){
+        $payKurir = 0;
+    }else{
+        $payKurir = $payKurir['total'];
+    }
+
+$total = $danaKas - ($kasOut + $payKurir);
+$totalDanaKas = $config->formatPrice($total);
+
+if($totalKas > 0 ){
         $style = 'success';
     }else{
         $style = 'danger';
     }
-    $danaKas = $config->formatPrice($dana);
-}
 ?>
 <div id="listKasInHeader" <?=$access['read']?>>
     <div class="row">
@@ -59,7 +79,7 @@ if(empty($totalKas['totalDana'])){
                                 <h3 class="card-title">Your Kas Balance</h3>
                                 <p class="card-text">Update every time.</p>
                                 <button class="btn btn-lg btn-<?=$style?> showListKasIn">
-                        <?=$danaKas?>
+                        <?=$totalDanaKas?>
                                 </button>
                             </div>
                             <div class="card-footer text-muted">

@@ -115,6 +115,13 @@ class Admin
         return $stmt;
 
     }
+    public function getKurir($id)
+    {
+        $stmt = $this->conn->prepare("SELECT id, nama_kurir, email, phone, wa, alamat, kel, kec, kota, province, status, created_at FROM kurirs WHERE id = :user_id");
+        $stmt->execute(array(':user_id' => $id));
+        return $stmt;
+
+    }
 
     public  function CountTables($field, $table)
     {
@@ -554,6 +561,29 @@ class Admin
         $stmt->execute();
 
         return $stmt;
+    }
+    public function actionMsg($type, $msg)
+    {
+        switch($type)
+        {
+            case'c':
+                $msg = $msg. ' Berhasil ditambahkan ke Database!';
+            break;
+            case'r':
+                $msg = $msg. ' telah tersedia di Database!';
+            break;
+            case'u':
+                $msg = $msg. ' Berhasil di update ke Database!';
+            break;
+            case'd':
+                $msg = $msg. ' Berhasil dihapus dari Database!';
+            break;
+            default:
+                $msg = '';
+            break;
+
+        }
+        return $msg;
     }
     public static function systemInfo()
     {

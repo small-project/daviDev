@@ -22,6 +22,8 @@
 <script src="<?=URL?>assets/js/modul/kas.js"></script>
 <?php } if($menu == 'management'){ ?>
     <script src="<?=URL?>assets/js/modul/management.js"></script>
+<?php } if($menu == 'kurir'){ ?>
+    <script src="<?=URL?>assets/js/modul/kurir.js"></script>
 <?php } ?>
 <script>
     $(document).ready(function(){

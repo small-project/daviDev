@@ -113,4 +113,29 @@ if($_GET['type'] == 'addAdmin') {
     }else{
         echo 'Failed';
     }
+}elseif($_GET['type'] == 'deleteSubmenu'){
+    $a  = $_POST['id'];
+    $b  = $_POST['admin'];
+
+    $stmt = $config->delRecord('sub_menus', 'id', $a);
+
+    if($stmt){
+        echo "Record Sub Menu berhasil di hapus";
+
+    }else{
+        echo "Failed";
+    }
+}elseif($_GET['type'] == 'delPrevillages'){
+    $a  = $_POST['data'];
+    $b  = $_POST['user'];
+    $c  = $_POST['adminI'];
+
+    $stmt = $config->delRecord('previllages', 'id', $a);
+
+    if($stmt){
+        echo "Record Previllages berhasil di hapus";
+
+    }else{
+        echo "Failed";
+    }
 }
