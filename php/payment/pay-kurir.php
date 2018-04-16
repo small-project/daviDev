@@ -20,7 +20,7 @@
                     Pembayaran Kurir
                 </div>
                 <div class="card-body">
-                    <div id="form-payKurir">
+                    <div id="form-payKurir" class="hidden">
                         <div class="card border-dark mb-3">
                             <div class="card-header bg-transparent border-dark">Form Tambah Pembayaran Kurir</div>
                             <div class="card-body">

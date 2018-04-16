@@ -23,7 +23,7 @@
                     List Pengeluaran
                 </div>
                 <div class="card-body">
-                    <div id="form-kasKeluar">
+                    <div id="form-kasKeluar" class="hidden">
                         <div class="card border-dark mb-3">
                             <div class="card-header bg-transparent border-dark">Form Tambah Pengeluaran Kas</div>
                             <div class="card-body">

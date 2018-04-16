@@ -1,4 +1,4 @@
-<div id="form-submenu">
+<div id="form-submenu" class="hidden">
     <div class="row justify-content-center">
         <div class="col-4">
             <div class="card border-dark mb-3">

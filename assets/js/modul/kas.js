@@ -2,20 +2,17 @@ $(document).ready(function() {
     $('#tableKasOut').DataTable();
     $('#kasMasuk').DataTable();
     $('#tablePayKurir').DataTable();
-    var formOutKas = $('#form-kasKeluar').hide();
     var listOutKas = $('#listKasKeluar').show();
-    var formInKas = $('#form-kasIn').hide();
-    var formPayCharge = $('#form-payKurir').hide();
     var listPayKurir = $('#listPayKurir').show();
     var listInKas = $('#listKasIn').hide();
     var monitoringKas = $('#monitoringKasIn').show();
 
     $('#listPengeluaranKas').on('click', '.addOutKas', function() {
-        formOutKas.show();
+        $('#form-kasKeluar').removeClass('hidden');
         listOutKas.hide();
     });
 
-    formOutKas.on('submit', function(e) {
+    $('#form-kasKeluar').on('submit', function(e) {
         e.preventDefault();
 
         var admin = $('#adminOut').val();
@@ -97,28 +94,9 @@ $(document).ready(function() {
         }
     });
 
-    // listOutKas.on('click', '.reportKasOut', function () {
-    //     var admin  = $(this).data('admin');
-    //
-    //     if(!confirm('Are you sure want to report this?')){
-    //         return false;
-    //     }else{
-    //         $.ajax({
-    //             url     : '../php/ajax/payment.php?type=reportKasOut',
-    //             method  : 'post',
-    //             data    : { admin: admin },
-    //
-    //             success : function (msg) {
-    //                 location.reload();
-    //                 alert(msg);
-    //             }
-    //         })
-    //     }
-    // })
-
     $('#listPemasukanKas').on('click', '.addInKas', function() {
         monitoringKas.hide();
-        formInKas.show();
+        $('#form-kasIn').removeClass('hidden');
     });
 
     monitoringKas.on('click', '.showListKasIn', function() {
@@ -167,7 +145,7 @@ $(document).ready(function() {
 
     listPayKurir.on('click', '.addpayCharge', function() {
         listPayKurir.hide();
-        formPayCharge.show();
+        $('#form-payKurir').removeClass('hidden');
     });
 
     listPayKurir.on('click', '.delPayCharge', function() {

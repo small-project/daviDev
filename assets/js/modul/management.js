@@ -1,5 +1,5 @@
 function formPrevillage() {
-    $('#form-previllage').show();
+    $('#form-previllage').removeClass('hidden');
     $('#listPrevillages').hide();
 }
 
@@ -21,16 +21,14 @@ function delPrevillage(id, admin, user) {
 }
 $(document).ready(function() {
 
-    var formAdmin = $('#form-admin').hide();
     var listAdmin = $('#listAdmin').show();
     var listMenu = $('#listMenu').show();
     var detailMenu = $('#detailMenu').hide();
-    var formSubmenu = $('#form-submenu').hide();
-    var formPrevillage = $('#form-previllage').hide();
+
 
     listAdmin.on('click', '.addAdmin', function() {
         listAdmin.hide();
-        formAdmin.show();
+        $('#form-admin').removeClass('hidden');
     });
 
     $('#admin-form').on('submit', function(e) {
@@ -73,7 +71,7 @@ $(document).ready(function() {
         detailMenu.hide();
         $('#menuID').val(id);
         $('#titleSubmenu').innerHTML = +title;
-        formSubmenu.show();
+        $('#form-submenu').removeClass('hidden');
     });
 
     $('#form-submenu').on('submit', function(e) {
@@ -93,7 +91,7 @@ $(document).ready(function() {
                 alert(msg);
                 $('#nameSub').val("");
                 $('#linkSub').val("");
-                formSubmenu.hide();
+                $('#form-submenu').addClass('hidden');
                 listMenu.show();
                 detailMenu.hide();
             }

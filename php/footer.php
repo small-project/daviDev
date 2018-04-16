@@ -1,30 +1,30 @@
 </main>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="<?=URL?>assets/vendors/dll/jquery.min.js"></script>
-<script src="<?=URL?>assets/vendors/parsley/parsley.min.js"></script>
-<script src="<?=URL?>assets/vendors/dll/popper.min.js"></script>
-<script src="<?=URL?>assets/js/bootstrap.min.js"></script>
-<script src="<?=URL?>assets/vendors/dll/holder.min.js"></script>
-<script src="<?=URL?>assets/vendors/dll/offcanvas.js"></script>
-<script type="text/javascript" src="<?=URL?>assets/vendors/dataTables/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="<?=URL?>assets/vendors/dataTables/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="<?=URL?>assets/vendors/dll/jquery.min.js"></script>
+    <script src="<?=URL?>assets/vendors/parsley/parsley.min.js"></script>
+    <script src="<?=URL?>assets/vendors/dll/popper.min.js"></script>
+    <script src="<?=URL?>assets/js/bootstrap.min.js"></script>
+    <script src="<?=URL?>assets/vendors/dll/holder.min.js"></script>
+    <script src="<?=URL?>assets/vendors/dll/offcanvas.js"></script>
+    <script type="text/javascript" src="<?=URL?>assets/vendors/dataTables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="<?=URL?>assets/vendors/dataTables/js/dataTables.bootstrap4.min.js"></script>
 
 
-<script src="<?=URL?>assets/js/custom.js"></script>
-<?php if($menu == 'corporate'){ ?>
-<script src="<?=URL?>assets/js/modul/corporate.js"></script>
-<?php } if($menu == 'order'){ ?>
-<script src="<?=URL?>assets/js/modul/order.js"></script>
-<?php } if($menu == 'payment'){ ?>
-<script src="<?=URL?>assets/js/modul/kas.js"></script>
-<?php } if($menu == 'management'){ ?>
-    <script src="<?=URL?>assets/js/modul/management.js"></script>
-<?php } if($menu == 'kurir'){ ?>
-    <script src="<?=URL?>assets/js/modul/kurir.js"></script>
-<?php } ?>
+    <script src="<?=URL?>assets/js/custom.js"></script>
+    <?php if($menu == 'corporate'){ ?>
+    <script src="<?=URL?>assets/js/modul/corporate.js"></script>
+    <?php } if($menu == 'order'){ ?>
+    <script src="<?=URL?>assets/js/modul/order.js"></script>
+    <?php } if($menu == 'payment'){ ?>
+    <script src="<?=URL?>assets/js/modul/kas.js"></script>
+    <?php } if($menu == 'management'){ ?>
+        <script src="<?=URL?>assets/js/modul/management.js"></script>
+    <?php } if($menu == 'kurir'){ ?>
+        <script src="<?=URL?>assets/js/modul/kurir.js"></script>
+    <?php } ?>
 <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();

@@ -4,7 +4,7 @@
         List Admin
     </div>
     <div class="card-body">
-        <div id="form-admin">
+        <div id="form-admin" class="hidden">
             <div class="row justify-content-center">
                 <div class="col-6">
                     <div class="card border-dark mb-3">

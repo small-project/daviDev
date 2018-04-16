@@ -49,7 +49,7 @@ if($totalKas > 0 ){
                     </div>
                 </div>
                 <div class="card-body">
-                    <div id="form-kasIn">
+                    <div id="form-kasIn" class="hidden">
                         <div class="card border-dark mb-3">
                             <div class="card-header bg-transparent border-dark">Form Tambah Dana Kas</div>
                             <div class="card-body">

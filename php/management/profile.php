@@ -52,7 +52,7 @@ $roles = $config->ProductsJoin('menus.id, menus.menu, menus.links, staffs.id_rol
             <div class="card-body">
                 <h5 class="card-title">Previllage Users <span class="float-right"><button class="btn btn-sm btn-primary" <?=$access['create']?> onclick="formPrevillage()"><i class="fa fa-fw fa-plus-square"></i> previllage</button></span></h5>
                 <hr>
-                <div id="form-previllage">
+                <div id="form-previllage" class="hidden">
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="card border-dark mb-3">
