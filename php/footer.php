@@ -24,6 +24,8 @@
         <script src="<?=URL?>assets/js/modul/management.js"></script>
     <?php } if($menu == 'kurir'){ ?>
         <script src="<?=URL?>assets/js/modul/kurir.js"></script>
+    <?php } if($menu == 'production'){?>
+        <script src="<?=URL?>assets/js/modul/stocks.js"></script>
     <?php } ?>
 <script>
     $(document).ready(function(){

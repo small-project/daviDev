@@ -1,9 +1,9 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: small-project
- * Date: 01/04/2018
- * Time: 11.04
- */
-
-echo '404 mother fuck';
+<div class="card">
+    <div class="card-body text-center">
+        <h1 class="text-danger">404</h1>
+        <hr>
+        <p>
+            Pages not Found!
+        </p>
+    </div>
+</div>

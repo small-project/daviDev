@@ -56,7 +56,7 @@ $charge = $config->ProductsJoin('delivery_charges.id, delivery_charges.price, de
                             <p>
                                 <button class="btn btn-sm btn-primary addDeliveryCharge" <?=$access['create']?> type="button"><span class="fa fa-fw fa-plus"></span> delivery charge</button>
                             </p>
-            <table id="tableDelivCharge" class="table table-hover<?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover">
+            <table id="tableDelivCharge" class="table table-hover <?=$device['device']=='MOBILE' ? 'table-responsive' : ''?> table-condensed table-hover">
             <thead class="thead-light">
                 <tr style="text-transform: lowercase;">
                     <th scope="col">nama kelurahan</th>

@@ -1,6 +1,6 @@
 <?php
     $outKas = $config->ProductsJoin('kas_outs.id, kas_outs.nama, kas_outs.total, kas_outs.ket, kas_outs.created_at, kas_outs.status, users.name', 'kas_outs',
-        'INNER JOIN users ON users.id = kas_outs.admin_id', "WHERE DATE(kas_outs.created_at)= CURDATE() AND kas_outs.status ='' ");
+        'INNER JOIN users ON users.id = kas_outs.admin_id', "WHERE kas_outs.status ='' ");
 ?>
 <div id="listKas">
     <div class="row">
