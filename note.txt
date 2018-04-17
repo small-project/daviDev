@@ -5,6 +5,7 @@ TRUNCATE kurirs;
 TRUNCATE delivery_charges;
 TRUNCATE corporates;
 TRUNCATE detail_trxs;
+TRUNCATE stocks;
 
 dev_P@ssw0rd
 daviflower_dev

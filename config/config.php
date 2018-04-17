@@ -45,7 +45,8 @@ if (isset($url[3])){
     $footer = "";
 }
 //
-$admin = $config->Products('id, name, email, jabatan, role_id', 'users WHERE id = '. $session_id);
+$admin = $config->runQuery('SELECT id, name, email, jabatan, role_id FROM users WHERE id = :id');
+$admin->execute(array(':id' => $session_id));
 $admin = $admin->fetch(PDO::FETCH_LAZY);
 $device = $config->systemInfo();
 //info weight pages

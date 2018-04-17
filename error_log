@@ -1,0 +1,432 @@
+[16-Apr-2018 07:53:31 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[16-Apr-2018 08:37:02 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[16-Apr-2018 12:32:05 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[16-Apr-2018 17:41:08 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[16-Apr-2018 17:41:10 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[16-Apr-2018 18:48:31 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 13:56:45 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 15:36:49 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 18:59:01 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 18:59:01 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:19 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:19 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:19 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:20 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:20 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:20 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:20 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:20 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:20 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:21 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:21 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:21 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:21 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:22 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:22 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:22 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:22 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:22 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:22 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:23 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:23 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:23 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:23 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:24 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:25 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:26 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:26 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:31 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:31 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:31 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:32 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:32 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:32 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:32 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:33 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:34 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:35 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:36 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:36 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:36 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:36 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:36 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:36 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:37 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:37 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:38:37 Asia/Jakarta] PHP Notice:  Undefined offset: 1 in /home/daviflower/public_html/dev/config/config.php on line 40
+[17-Apr-2018 21:38:37 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/kurir.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 21:49:40 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 22:41:04 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[17-Apr-2018 23:11:59 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
+[18-Apr-2018 01:44:10 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/daviflower/public_html/dev/config/api.php:138
+Stack trace:
+#0 /home/daviflower/public_html/dev/config/api.php(138): PDOStatement->execute()
+#1 /home/daviflower/public_html/dev/config/config.php(48): Admin->Products('id, name, email...', 'users WHERE id ...')
+#2 /home/daviflower/public_html/dev/index.php(9): require('/home/daviflowe...')
+#3 {main}
+  thrown in /home/daviflower/public_html/dev/config/api.php on line 138
