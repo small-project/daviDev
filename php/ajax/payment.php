@@ -56,7 +56,7 @@ if($_GET['type'] == 'reportKasOut')
 
     $tanggal = $config->getDate('Y-m-d H:m:s');
 
-    $sql = "SELECT SUM(total) as total FROM kas_outs WHERE DATE(created_at) = CURDATE() AND admin_id = :admin AND status = '' ";
+    $sql = "SELECT SUM(total) as total FROM kas_outs WHERE admin_id = :admin AND status = '' ";
     $total = $config->runQuery($sql);
     $total->execute(array(
         ':admin' => $b
@@ -66,7 +66,7 @@ if($_GET['type'] == 'reportKasOut')
 
         $total = $info['total'];
 
-        $stmt = $config->runQuery("UPDATE kas_outs SET status = '1' WHERE DATE(created_at) = CURDATE() AND admin_id = :admin AND status = '' ");
+        $stmt = $config->runQuery("UPDATE kas_outs SET status = '1' WHERE admin_id = :admin AND status = '' ");
         $stmt->execute(array(
             ':admin' => $b
         ));

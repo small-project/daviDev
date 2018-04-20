@@ -24,7 +24,7 @@ $user = $user['name'];
 
 $tanggal = $config->getDate('d M Y');
 
-$stmt = $config->runQuery("SELECT nama, total, ket, created_at, admin_id FROM kas_outs WHERE DATE(created_at) = CURDATE() AND admin_id = :admin AND status = '1'");
+$stmt = $config->runQuery("SELECT nama, total, ket, created_at, admin_id FROM kas_outs WHERE admin_id = :admin AND status = '1'");
 $stmt->execute(array(
     ':admin' => $u
 ));

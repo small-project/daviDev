@@ -52,19 +52,27 @@ if($_GET['type'] == 'addCharge'){
     $c  = $_POST['kelurahan'];
     $d  = $config->getDate('Y-m-d H:m:s');
 
-    $sql = "INSERT INTO delivery_charges (id_kelurahan, price, created_at, admin_id) VALUES (:a, :b, :c, :d)";
-    $stmt = $config->runQuery($sql);
-    $stmt->execute(array(
-        ':a'    => $c, 
-        ':b'    => $b, 
-        ':c'    => $d,
-        ':d'    => $a
-    ));
+    $query = "SELECT id FROM delivery_charges WHERE id_kelurahan = :id";
+    $cek = $config->runQuery($query);
+    $cek->execute(array(':id' => $c));
 
-    if($stmt){
-        echo 'Berhasil Menambahkan Delivery Charge!';
+    if($cek->rowCount() > 0 ){
+        echo 'id_kelurahan sudah terdaftar di database!';
     }else{
-        echo 'Failed';
+        $sql = "INSERT INTO delivery_charges (id_kelurahan, price, created_at, admin_id) VALUES (:a, :b, :c, :d)";
+        $stmt = $config->runQuery($sql);
+        $stmt->execute(array(
+            ':a'    => $c, 
+            ':b'    => $b, 
+            ':c'    => $d,
+            ':d'    => $a
+        ));
+
+        if($stmt){
+            echo $config->actionMsg('c', 'delivery_charges');
+        }else{
+            echo 'Failed';
+        }
     }
 }
 if($_GET['type'] == 'delCharge'){
