@@ -1,0 +1,54 @@
+TRUNCATE kas_outs;
+TRUNCATE kas_ins;
+TRUNCATE pay_kurirs;
+TRUNCATE kurirs;
+TRUNCATE delivery_charges;
+TRUNCATE corporates;
+TRUNCATE detail_trxs;
+TRUNCATE stocks;
+
+dev_P@ssw0rd
+daviflower_dev
+
+
+ALTER TABLE `delivery_charges` DROP `id`;
+ALTER TABLE `bidang_usahas` DROP `id`;
+ALTER TABLE `corporates` DROP `id`;
+ALTER TABLE `detail_trxs` DROP `id`;
+ALTER TABLE `kas_ins` DROP `id`;
+ALTER TABLE `kas_outs` DROP `id`;
+ALTER TABLE `kurirs` DROP `id`;
+ALTER TABLE `levels` DROP `id`;
+ALTER TABLE `menus` DROP `id`;
+ALTER TABLE `pay_kurirs` DROP `id`;
+ALTER TABLE `previllages` DROP `id`;
+ALTER TABLE `roles` DROP `id`;
+ALTER TABLE `staffs` DROP `id`;
+ALTER TABLE `sub_menus` DROP `id`;
+ALTER TABLE `stocks` DROP `id`;
+
+ALTER TABLE `delivery_charges` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `bidang_usahas` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `corporates` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `detail_trxs` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `kas_ins` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `kas_outs` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `kurirs` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `levels` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `menus` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `pay_kurirs` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `previllages` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `roles` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `staffs` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `sub_menus` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+ALTER TABLE `stocks` ADD `id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`id`);
+
+
+INSERT INTO `menus` (`id`, `menu`, `links`) VALUES (NULL, 'production', 'production');
+
+INSERT INTO `staffs` (`id`, `id_menu`, `id_roles`) VALUES (NULL, '11', '1');
+INSERT INTO `staffs` (`id`, `id_menu`, `id_roles`) VALUES (NULL, '11', '2');
+INSERT INTO `staffs` (`id`, `id_menu`, `id_roles`) VALUES (NULL, '11', '3');
+INSERT INTO `staffs` (`id`, `id_menu`, `id_roles`) VALUES (NULL, '11', '4');
+
+UPDATE table MENUS, STAFFS, SUB_MENUS,
